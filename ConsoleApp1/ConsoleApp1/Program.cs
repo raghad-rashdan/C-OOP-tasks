@@ -104,6 +104,7 @@ if ((ee >= aa) && (ee >= bb) && (ee >= cc) && (ee >= dd))
     return;
 }
 
+Console.WriteLine("-----------------------------------------------");
 // Write a C# program that converts kilometers per hour to miles per hour.  
 Console.WriteLine("Please enter kilometers:");
 double kilometers = Convert.ToDouble(Console.ReadLine());
