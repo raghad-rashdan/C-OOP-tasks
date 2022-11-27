@@ -1,188 +1,130 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-//task1
-using System.Runtime.Intrinsics.X86;
+////task1: Correct the syntax error:
+////string[] ARR = [1, 7  9  45, ]
+////string[] ARR = {1, 7, 9, 45};
 
-static void sum_average()
+////int arr2 =["Str" "alex","moh"
+////int[] arr2 ={"Str" ,"alex", "moh"};
+
+////string arr3= 'the','fox' 'over' lazy, 'dog',]
+////string[] arr3= { "the","fox", "over","lazy", "dog"};
+
+
+//// task 2: What the index of "Banana","Tomato"?
+////String [ ] fruits =["Tomato", "Banana", "Watermelon"]
+////correct : String [] fruits ={"Tomato", "Banana", "Watermelon"};
+////index of "Banana" = 1
+////index of "Tomato"=0
+
+//task3: Create an multiple arrays that represents your:
+using System.ComponentModel;
+
+string[] food = { "Pizza", "Ice Cream", "Fried Chicken", "Hamburgers", "Bacon" };
+string[] Sport = { "Tennis", "Football", "Soccer" };
+string[] Movie = { "Peter Pan", "Lilo & Stitch", "Wreck-It-Ralph", "Frozen" };
+
+for (int x = 0; x < food.Length; x++)
 {
-    float sum = 0;
-    float avg = 0;
-    for (int i = 1; i <= 10; i++)
+    Console.WriteLine(food[x]);
+}
+Console.WriteLine("..................................");
+
+foreach (string y in food)
+{
+    Console.WriteLine(y);
+}
+Console.WriteLine("..................................");
+
+for (int z = 0; z < Sport.Length; z++)
+{
+    Console.WriteLine(Sport[z]);
+}
+Console.WriteLine("..................................");
+foreach (string w in Sport)
+{
+    Console.WriteLine(w);
+}
+Console.WriteLine("..................................");
+for (int q = 0; q < Movie.Length; q++)
+{
+    Console.WriteLine(Movie[q]);
+}
+Console.WriteLine("..................................");
+
+foreach (string e in Movie)
+{
+    Console.WriteLine(e);
+}
+
+
+Console.WriteLine("----------------------------------------------------------");
+////task4 : Write a program in C# to calculate the sum of three numbers with getting input in one line separated by a comma
+Console.WriteLine("Enter three numbers seperated by / ");
+
+string num = Console.ReadLine();
+
+string[] nums = num.Split('/');
+
+int suum = 0;
+
+foreach (string p in nums)
+{
+    suum += Convert.ToInt32(p);
+}
+
+Console.WriteLine("sum:" + suum);
+
+
+Console.WriteLine("----------------------------------------------------------");
+//task 5 : Write a program in C# to display the n terms of odd number and their sum from [1- 100 ]. 
+int i, n, summ = 0;
+Console.WriteLine("Input number of terms : ");
+n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("The odd numbers are :");
+for (i = 1; i <= n; i++)
+{
+    Console.Write("{0} ", 2 * i - 1);
+    summ += 2 * i - 1;
+}
+Console.WriteLine("The Sum of odd Natural Number upto {0} terms : {1} ", n, summ);
+
+Console.WriteLine("----------------------------------------------------------");
+//task6:Write a program in C## to display the pattern like right angle triangle using an asterisk. Go to the editor
+int b = 3;
+for (int d = 1; d <= 4; d++)
+{
+    for (int m = b; m >= 1; m--)
     {
-        sum = sum + i;
-        avg = sum / i;
+        Console.Write(" ");
+
     }
-
-    Console.WriteLine(" the sum of nnmber is :" + sum);
-    Console.WriteLine(" the sum of nnmber is :" + avg);
-
-}
-sum_average();
-
-Console.WriteLine("--------------------------------");
-//task2
-static void cube_of_number (int x, int y, int z, int r, int a)
-{
-    Console.WriteLine(x * x * x);
-    Console.WriteLine(y * y * y);
-    Console.WriteLine(z * z * z);
-    Console.WriteLine(r * r * r);
-    Console.WriteLine(a * a * a);
-}
-cube_of_number(1, 2, 3, 4, 5);
-
-
-
-Console.WriteLine("--------------------------------");
-//task3
-static void Years()
-{
-    int[] years = { 1763, 1972, 1925, 1916, 1984, 1124, 1950, 2020 };
-    foreach (int year in years)
+    for (int k = 1; k <= d; k++)
     {
-        if (year > 1950)
-        {
-            Console.Write( year +"\t" );
-        }
+        Console.Write("* ");
     }
-
+    Console.WriteLine();
+    b--;
 }
-Console.WriteLine("the years greater than 1950 : ");
-Years();
 
-Console.WriteLine("\n--------------------------------");
-//task4
-    static void age_in_days(int ageinyears)
+Console.WriteLine("----------------------------------------------------------");
+//task7:  Write a program in C# to make such a pattern like right angle triangle with number increased by 1. Go to the editor
+int o = 3;
+for (int l = 1; l <= 4; l++)
 {
-    int ageindays = ageinyears * 365;
-    Console.WriteLine("age in days : "+ageindays);
-}
-age_in_days(15);
-
-
-
-Console.WriteLine("--------------------------------");
-//task5
-int chickens;
-Console.Write("enter the number of chickens : ");
-chickens = Convert.ToInt32(Console.ReadLine());
-int cows;
-Console.Write("enter the number of  cows : ");
-cows = Convert.ToInt32(Console.ReadLine());
-int pigs;
-Console.Write("enter the number of  pigs : ");
-pigs = Convert.ToInt32(Console.ReadLine());
-
-static int animals(int chickens , int cows ,int pigs)
-{
-      return (chickens * 2) + (cows * 4) + (pigs * 4);
-        }
-Console.WriteLine("The number of legs that can be counted among all his animals is: " + animals(chickens, cows, pigs));
-
-
-
-Console.WriteLine("--------------------------------");
-//task6
-
-    static void success_login(string username, string pass)
-{
-    string[] usernames = { "raghad", "alaa", "marah" };
-    string[] passwords = { "raghad123", "alaa123", "marah123" };
-    for (int i = 0; i < 3; i++)
+    for (int v = o; v >= 1; v--)
     {
-        if (username == usernames[i] && pass == passwords[i])
-        {
-            Console.WriteLine("success login.welcome {0}", username);
-            break;
-        }
-        else if (i == 2)
-        {
-            Console.WriteLine("login failed");
-        }
+        Console.Write(" ");
+
     }
-
-}
-success_login("marah", "marah1263");
-
-Console.WriteLine("--------------------------------");
-//task7
- static int Power(int w)
-{
-    return w*w;
-}
-
-Console.WriteLine("the power of w : "+Power(6));
-
-
-Console.WriteLine("--------------------------------");
-//task8
-
-    static void leap_year(int year)
-{
-    if (year < 2024 && year > 1900)
+    for (int k = 1; k <= l; k++)
     {
-        if (year % 4 == 0)
-        {
-            Console.WriteLine("{0} is a leap year.", year);
-        }
-        else
-        {
-            Console.WriteLine("this is not leap year");
-        }
+        Console.Write(k + " ");
     }
-}
-leap_year(2020);
-
-
-Console.WriteLine("--------------------------------");
-//task9
-int n;
-
-Console.WriteLine("Enter a positive  integer: ");
- n = Convert.ToInt32(Console.ReadLine());
-
-
-if (check_prime(n)) {
-    Console.WriteLine(n +" is a prime number."); }
-else {
-    Console.WriteLine(n + " is not a prime number."); ;
-}
-
-bool check_prime(int n)
-{
-    bool is_prime = true;
-
-    // 0 and 1 are not prime numbers
-    if (n == 0 || n == 1)
-    {
-        is_prime = false;
-    }
-
-    for (int i = 2; i <= n / 2; ++i)
-    {
-        if (n % i == 0)
-        {
-            is_prime = false;
-            break;
-        }
-    }
-
-    return is_prime;
+    Console.WriteLine();
+    o--;
 }
 
 
-
-Console.WriteLine("--------------------------------");
-//task10
-static int  number_of_words (string sentence)
-{
-    string[] slicer = sentence.Split(' ');
-    int count = 0;
-    foreach (string s in slicer)
-        count++;
-
-    return count;
-}
-Console.WriteLine("Enter a sentence ");
-string sentence = Console.ReadLine();
-Console.WriteLine(" Number of words in that sentence is " + number_of_words(sentence));
+Console.WriteLine("----------------------------------------------------------");
+//Write a program in C# to calculate the AVG of unlimited numbers that are not redundant
