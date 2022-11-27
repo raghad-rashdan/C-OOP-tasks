@@ -1,0 +1,15 @@
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\november23.csproj.AssemblyReference.cache
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\november23.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\november23.AssemblyInfoInputs.cache
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\november23.AssemblyInfo.cs
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\november23.csproj.CoreCompileInputs.cache
+C:\Users\96277\source\repos\november23\november23\bin\Debug\net6.0\november23.exe
+C:\Users\96277\source\repos\november23\november23\bin\Debug\net6.0\november23.deps.json
+C:\Users\96277\source\repos\november23\november23\bin\Debug\net6.0\november23.runtimeconfig.json
+C:\Users\96277\source\repos\november23\november23\bin\Debug\net6.0\november23.dll
+C:\Users\96277\source\repos\november23\november23\bin\Debug\net6.0\november23.pdb
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\november23.dll
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\refint\november23.dll
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\november23.pdb
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\november23.genruntimeconfig.cache
+C:\Users\96277\source\repos\november23\november23\obj\Debug\net6.0\ref\november23.dll
