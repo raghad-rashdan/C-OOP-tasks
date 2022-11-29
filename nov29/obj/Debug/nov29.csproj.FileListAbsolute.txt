@@ -1,0 +1,8 @@
+C:\Users\96277\source\repos\nov29\nov29\bin\Debug\nov29.exe.config
+C:\Users\96277\source\repos\nov29\nov29\bin\Debug\nov29.exe
+C:\Users\96277\source\repos\nov29\nov29\bin\Debug\nov29.pdb
+C:\Users\96277\source\repos\nov29\nov29\obj\Debug\nov29.csproj.AssemblyReference.cache
+C:\Users\96277\source\repos\nov29\nov29\obj\Debug\nov29.csproj.SuggestedBindingRedirects.cache
+C:\Users\96277\source\repos\nov29\nov29\obj\Debug\nov29.csproj.CoreCompileInputs.cache
+C:\Users\96277\source\repos\nov29\nov29\obj\Debug\nov29.exe
+C:\Users\96277\source\repos\nov29\nov29\obj\Debug\nov29.pdb
